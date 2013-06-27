@@ -1,0 +1,4 @@
+CREATE USER 'flava'@'localhost' IDENTIFIED BY 'PASSWORD' ;
+SET PASSWORD FOR 'flava'@'localhost' = PASSWORD('awsmysql');
+CREATE Database flava_dbCOPY.sql;
+GRANT ALL  ON *.* TO 'flava'@'localhost'
