@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="row-fluid">
+    <div class="span12">
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span8 offset3">
+        <h1>What kind of flava you feeling?</h1>
+    </div>
+</div>
+
+<form action="/drop" method="Post">
+<div class="row-fluid">
+    <div class="span3 offset3">
+        <select id="flavor" name="flavor">
+            <option value="Savory">Savory</option>
+            <option value="Spicy">Spicy</option>
+            <option value="Sweet">Sweet</option>
+        </select>
+    </div>
+    <div class="span4">
+        <input type="submit" value="Get your juices flowing!">
+    </div>
+</div>
+</form>           
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+<div class="row-fluid">
+    <div class="span12">
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span8 offset4">
+        <h1>{{flavor}}!</h1>
+    </div>
+</div>
+
+<div class="row-fluid">
+    <div class="span8 offset4">
+        <form action="/more0" method="Post">
+            <input type="hidden" name="rec0" id="rec0" value="{{recsList[0]}}">
+            <input type="submit" value="{{recs[0]}}">
+        </form>
+    </div>
+</div>
+
+<div class="row-fluid">
+    <div class="span8 offset4">
+        <form action="/more1" method="Post">
+            <input type="hidden" name="rec1" id="rec1" value="{{recsList[1]}}">
+            <input type="submit" value="{{recs[1]}}">
+        </form>
+    </div>
+</div>
+
+
+<div class="row-fluid">
+    <div class="span8 offset4">
+        <form action="/more2" method="Post">
+            <input type="hidden" name="rec2" id="rec2" value="{{recsList[2]}}">
+            <input type="submit" value="{{recs[2]}}">
+        </form>
+    </div>
+</div>
+
+
+<div class="row-fluid">
+    <div class="span8 offset4">
+        <form action="/more3" method="Post">
+            <input type="hidden" name="rec3" id="rec3" value="{{recsList[3]}}">
+            <input type="submit" value="{{recs[3]}}">
+        </form>
+    </div>
+</div>
+
+
+<div class="row-fluid">
+<div class="span4 offset7">
+<form action="/more" method="Post">
+<!--<input type="hidden" name="flavor" id="flavor" value="{{flavor}}">-->
+<input type="submit" value="More {{flavor}} ideas">
+</form>
+</div>
+</div>
+
+{% endblock %}
