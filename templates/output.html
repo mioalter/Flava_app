@@ -3,7 +3,7 @@
 
 
 
-<div class="row-fluid">
+<!--<div class="row-fluid">
     <div class="span12">
     </div>
 </div>
@@ -14,53 +14,53 @@
 <div class="row-fluid">
     <div class="span12">
     </div>
-</div>
+</div>-->
 <div class="row-fluid">
     <div class="span12">
     </div>
 </div>
 <div class="row-fluid">
-    <div class="span8 offset4">
+    <div class="span6 offset5">
         <h1>{{flavor}}!</h1>
     </div>
 </div>
 
 <div class="row-fluid">
-    <div class="span8 offset4">
+    <div class="span4 offset2">
+        <img src="{{imgs[0]}}" height=150><br>
         <form action="/more0" method="Post">
             <input type="hidden" name="rec0" id="rec0" value="{{recsList[0]}}">
-            <input type="submit" value="{{recs[0]}}">
+                <input type="submit" value="{{recs[0]}}">
         </form>
     </div>
+    
+    <div class="span4 offset1">
+        <img src="{{imgs[1]}}" height=150><br>
+            <form action="/more1" method="Post">
+                <input type="hidden" name="rec1" id="rec1" value="{{recsList[1]}}">
+                    <input type="submit" value="{{recs[1]}}">
+                        </form>
+            </div>
 </div>
 
-<div class="row-fluid">
-    <div class="span8 offset4">
-        <form action="/more1" method="Post">
-            <input type="hidden" name="rec1" id="rec1" value="{{recsList[1]}}">
-            <input type="submit" value="{{recs[1]}}">
-        </form>
-    </div>
-</div>
+
 
 
 <div class="row-fluid">
-    <div class="span8 offset4">
+    <div class="span4 offset2">
+        <img src="{{imgs[2]}}" height=150><br>
         <form action="/more2" method="Post">
             <input type="hidden" name="rec2" id="rec2" value="{{recsList[2]}}">
             <input type="submit" value="{{recs[2]}}">
         </form>
-    </div>
 </div>
-
-
-<div class="row-fluid">
-    <div class="span8 offset4">
-        <form action="/more3" method="Post">
-            <input type="hidden" name="rec3" id="rec3" value="{{recsList[3]}}">
-            <input type="submit" value="{{recs[3]}}">
-        </form>
-    </div>
+    <div class="span4 offset1">
+        <img src="{{imgs[3]}}" height=150><br>
+            <form action="/more3" method="Post">
+                <input type="hidden" name="rec3" id="rec3" value="{{recsList[3]}}">
+                    <input type="submit" value="{{recs[3]}}">
+                        </form>
+            </div>
 </div>
 
 
@@ -72,5 +72,4 @@
 </form>
 </div>
 </div>
-
 {% endblock %}
