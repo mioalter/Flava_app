@@ -1,4 +1,3 @@
-
 ###############IMPORTANT#######################
 import nltk
 from nltk import word_tokenize
@@ -19,7 +18,7 @@ import pandas as pd
 
 FLAVOR='piquant'
 
-connection=MySQLdb.connect(host='127.0.0.1',user='root',passwd='',db='flava_db')
+connection=MySQLdb.connect(host='127.0.0.1',user='root',passwd='xxx',db='flava_db')
 DF=psql.frame_query('SELECT rec_id,yum_id,rec_name,rec_flavor,rec_food,rec_rating,count(rec_name) AS Count \
 FROM flava_db.info \
 WHERE ((rec_flavor="%s")AND(rec_rating>3)) \
