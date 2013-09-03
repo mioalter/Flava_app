@@ -2,7 +2,7 @@ import requests
 import json
 import MySQLdb
 
-headers = {'X-Yummly-App-ID':'c1589366','X-Yummly-App-Key': '111df0b296542d260b860f6058c46de7'}
+headers = {'X-Yummly-App-ID':'xxxxxx','X-Yummly-App-Key': 'xxxxxxx'}
 
 ###Flavor is SAVORY/MEATY!!###
 
