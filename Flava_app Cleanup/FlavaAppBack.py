@@ -8,7 +8,7 @@ import requests
 import json
 
 
-connection=MySQLdb.connect(host='127.0.0.1',user='root',passwd='',db='flava_db')
+connection=MySQLdb.connect(host='127.0.0.1',user='xxx',passwd='xxx',db='flava_db')
 flavor=''
 
 def getRecs(flav):
